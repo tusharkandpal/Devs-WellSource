@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link rel="stylesheet" href="css/album.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/Light Salmon Simple Industrial Logo.png" width="30" height="30" class="d-inline-block align-top"
+        alt="" loading="lazy">
+      Devs WellSource
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo02">
+      <ul class="nav nav-pills">
+        <li class="nav-item" id="2">
+          <a class="nav-link active" data-toggle="nav" href="categories.html">Categories</a>
+        </li>
+        <li class="nav-item " id="3">
+          <a class="nav-link" data-toggle="nav" href="library.html">Library</a>
+        </li>
+        <li class="nav-item " id="4">
+          <a class="nav-link" data-toggle="nav" href="about.html">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 right">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Categories</h1>
+      <p class="lead text-muted">Go through the various categories mentioned below. Find out your choice & explore the
+        relevant sites.</p>
+      <p>
+        <a href="#category" class="btn btn-primary my-2">Explore</a>
+        <a href="about.html" class="btn btn-secondary my-2">About</a>
+      </p>
+    </div>
+    <span class="animate__bounce"></span>
+  </section>
+
+  <main id="category">
+    <div class="album py-5 bg-light ">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="new" onclick="show(this.id)">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Themes">
+                <rect width="100%" height="100%" fill="#fb00ff" /><text x="50%" y="50%" fill="#000" dy=".3em">New
+                  ideas</text></svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="animations" onclick="show(this.id)">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Animations">
+                <rect width="100%" height="100%" fill="#37008a" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Animations</text></svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="icons" onclick="show(this.id)">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Icons">
+                <rect width="100%" height="100%" fill="#fe8291" /><text x="50%" y="50%" fill="#000"
+                  dy=".3em">Icons</text></svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="fonts" onclick="show(this.id)">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Fonts">
+                <rect width="100%" height="100%" fill="#b89f04" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Fonts</text></svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="help" onclick="show(this.id)">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Help">
+                <rect width="100%" height="100%" fill="#3bdb53" /><text x="50%" y="50%" fill="#000"
+                  dy=".3em">Help</text></svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="images" onclick="show(this.id)">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Images">
+                <rect width="100%" height="100%" fill="#167369" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Images</text></svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="learning" onclick="show(this.id)">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Learning">
+                <rect width="100%" height="100%" fill="#7db3ff" /><text x="50%" y="50%" fill="#000"
+                  dy=".3em">Learning</text></svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="colors" onclick="show(this.id)">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Colors">
+                <rect width="100%" height="100%" fill="#b80b3c" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Colors</text></svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="design" onclick="show(this.id)">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Design">
+                <rect width="100%" height="100%" fill="#d692f7" /><text x="50%" y="50%" fill="#000"
+                  dy=".3em">Design</text></svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <main id="sub">
+
+    <div id="sub1">
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="card-deck my-3">
+            <div class="card " style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Product Hunt</h5>
+                <p class="card-text">Product Hunt surfaces the best new products, every day. It's a place for
+                  product-loving enthusiasts to share and geek out about the latest mobile apps, websites, hardware
+                  projects, and tech creations.</p>
+                <a href="https://www.producthunt.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Dribbble</h5>
+                <p class="card-text">Dribbble is a self-promotion and social networking platform for digital designers
+                  and creatives. It serves as a design portfolio platform, jobs and recruiting site and is one of the
+                  largest platforms for designers to share their work online.</p>
+                <a href="https://dribbble.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Awwwards</h5>
+                <p class="card-text">Awwwards is a professional web design and development competition body. It aims to
+                  recognize and promote the best of innovative web design. It is a website competition that developers
+                  can submit to.</p>
+                <a href="https://www.awwwards.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="card-deck my-3">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Product Hunt</h5>
+                <p class="card-text">Product Hunt surfaces the best new products, every day. It's a place for
+                  product-loving enthusiasts to share and geek out about the latest mobile apps, websites, hardware
+                  projects, and tech creations.</p>
+                <a href="https://www.producthunt.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Dribbble</h5>
+                <p class="card-text">Dribbble is a self-promotion and social networking platform for digital designers
+                  and creatives. It serves as a design portfolio platform, jobs and recruiting site and is one of the
+                  largest platforms for designers to share their work online.</p>
+                <a href="https://dribbble.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Awwwards</h5>
+                <p class="card-text">Awwwards is a professional web design and development competition body. It aims to
+                  recognize and promote the best of innovative web design. It is a website competition that developers
+                  can submit to.</p>
+                <a href="https://www.awwwards.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div id="sub2">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="card-deck">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">GSAP</h5>
+                <p class="card-text">GSAP is an industry standard JavaScript animation library from GreenSock that lets
+                  you craft high-performance animations that work in every major browser.</p>
+                <a href="https://greensock.com/gsap/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">svgator</h5>
+                <p class="card-text">It's SVG animation made easy - no coding, browser-based, free for everyone. Make
+                  stunning animations and export a single animated SVG file.</p>
+                <a href="https://www.svgator.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Animista</h5>
+                <p class="card-text">Animista is a place where you can play with a collection of ready to use CSS
+                  animations, tweak them and download only those you will actually use.</p>
+                <a href="https://animista.net/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub3">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="card-deck">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">flaticon</h5>
+                <p class="card-text">3322500+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT. Thousands
+                  of free icons in the largest database of free vector icons!</p>
+                <a href="https://www.flaticon.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">icons8</h5>
+                <p class="card-text">Designers, download the design stuff for free — icons, photos, UX illustrations,
+                  and music for your videos.</p>
+                <a href="https://icons8.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">css.gg</h5>
+                <p class="card-text">Open-source CSS, SVG and Figma UI Icons</p>
+                <a href="https://css.gg/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub4">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="card-deck">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Google Fonts</h5>
+                <p class="card-text">Making the web more beautiful, fast, and open through great typography.</p>
+                <a href="https://fonts.google.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Font Squirrel</h5>
+                <p class="card-text">Font Squirrel scours the internet for high quality, legitimately free fonts .
+                  Download thousands of completely legal, high quality, free fonts.</p>
+                <a href="https://www.fontsquirrel.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Font Space</h5>
+                <p class="card-text">Free downloads of legally licensed fonts that are perfect for your design projects.
+                  The best place in the universe to search for amazing fonts.</p>
+                <a href="https://www.fontspace.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub5">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="card-deck">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">CSS-Tricks</h5>
+                <p class="card-text">Daily articles about CSS, HTML, JavaScript, and all things related to web design
+                  and development.</p>
+                <a href="https://css-tricks.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">OverAPI</h5>
+                <p class="card-text">OverAPI.com is a site collecting all the cheatsheets,all!</p>
+                <a href="https://overapi.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Oh Shit, Git!?!</h5>
+                <p class="card-text">Zine made for programmers — recipes for gitting out of a mess.</p>
+                <a href="https://ohshitgit.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub6">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="card-deck">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Unsplash</h5>
+                <p class="card-text">Unsplash is a website dedicated to sharing stock photography under the Unsplash license. The website claims over 207,000 contributing photographers and generates more than 17 billion photo impressions per month on their growing library of over 2 million photos.</p>
+                <a href="https://unsplash.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Pexels</h5>
+                <p class="card-text">Free stock photos you can use everywhere. ✓ Free for commercial use ✓ No attribution required.</p>
+                <a href="https://www.pexels.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Pixabay</h5>
+                <p class="card-text">Pixabay.com is an international, copyleft and free-to-use website for sharing photos, illustrations, vector graphics, film footage and music. As of November 2017, Pixabay offers over 1,188,454 free photos, illustrations, and vectors and videos.</p>
+                <a href="https://pixabay.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub7">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="card-deck">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Exercism</h5>
+                <p class="card-text">Exercism is an online, open-source, free coding platform that offers code practice and mentorship on 50 different programming languages.</p>
+                <a href="https://exercism.io/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">freeCodeCamp</h5>
+                <p class="card-text">freeCodeCamp is a non-profit organization that consists of an interactive learning web platform, an online community forum, chat rooms, online publications and local organizations that intend to make learning web development accessible to anyone.</p>
+                <a href="https://www.freecodecamp.org/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Codecademy</h5>
+                <p class="card-text">Codecademy is an American online interactive platform that offers free coding classes in 12 different programming languages including Python, Java, Go, JavaScript, Ruby, SQL, C++, Swift, and Sass, as well as markup languages HTML and CSS.</p>
+                <a href="https://www.codecademy.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub8">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="card-deck">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Coolors</h5>
+                <p class="card-text">The super fast color schemes generator! Generate or browse beautiful color combinations for your designs.</p>
+                <a href="https://coolors.co/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">uiGradients</h5>
+                <p class="card-text">A handpicked collection of beautiful color gradients for designers and developers.</p>
+                <a href="https://uigradients.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">CSS Gradient</h5>
+                <p class="card-text">As a free css gradient generator tool, this website lets you create a colorful gradient background for your website, blog, or social media profile.</p>
+                <a href="https://cssgradient.io/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sub9">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="card-deck">
+
+            
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">SVG Backgrounds</h5>
+                <p class="card-text">SVG Backgrounds hosts a collection of customizable SVG-based repeating patterns and backgrounds for websites and blogs.</p>
+                <a href="https://www.svgbackgrounds.com/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">dbdiagram.io</h5>
+                <p class="card-text">A free, simple tool to draw ER diagrams by just writing code.
+                  Designed for developers and data analysts.</p>
+                <a href="https://dbdiagram.io/home" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Neumorphism</h5>
+                <p class="card-text">CSS code generator that will help with colors, gradients and shadows to adapt this new design trend or discover its posibilities.</p>
+                <a href="https://neumorphism.io/" class="btn btn-primary" target="blank">Go to site</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
