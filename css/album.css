@@ -4,7 +4,7 @@
     margin-bottom: 0;
     height: 70vh;
       position: relative;
-      background: url('/img/pexels-jéshoots-234527.jpg') center center/cover;
+      background: url('./img/pexels-jéshoots-234527.jpg') center center/cover;
       color: #fff;
   }
   @media (min-width: 768px) {
