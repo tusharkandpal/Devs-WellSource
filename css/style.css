@@ -7,6 +7,9 @@
     padding: 0;
     scroll-behavior: smooth !important;
 }
+html,body{
+  height: 100vh;
+}
 
 .bd-placeholder-img {
   font-size: 1.125rem;
