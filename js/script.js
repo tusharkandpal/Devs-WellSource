@@ -2,9 +2,9 @@
 
 $(document).ready(function(){
     $(window).scroll(function(){
-        let oTop=$(".col-md-4").offset().top-window.innerHeight;
+        let oTop=$("#category .col-md-4").offset().top-window.innerHeight;
         if($(window).scrollTop()>oTop){
-            $('.col-md-4').addClass('animate__animated animate__pulse');
+            $('#category .col-md-4').addClass('animate__animated animate__pulse');
             
         }
     });
